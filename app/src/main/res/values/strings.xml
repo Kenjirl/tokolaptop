@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Progmob Satu</string>
+    <string name="welcome">WELCOME</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="belum_punya_akun">Belum punya Akun?</string>
+    <string name="daftar_di_sini">Daftar di Sini</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="register">REGISTER</string>
+    <string name="nama">Nama</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="masuk_di_sini">Masuk di Sini</string>
+    <string name="sudah_punya_akun">Sudah punya Akun?</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="log_out">Log Out</string>
+    <string name="hello">Hello</string>
+    <string name="kenjiro">Kenjiro</string>
+    <string name="search_here">Search here</string>
+    <string name="asus">Asus</string>
+    <string name="acer">Acer</string>
+    <string name="apple">Apple</string>
+    <string name="hp">hp</string>
+    <string name="home">Home</string>
+    <string name="basket">Basket</string>
+    <string name="account">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
