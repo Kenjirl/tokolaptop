@@ -9,11 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="custom_button">#1C7C54</color>
     <color name="custom_text">#1B512D</color>
-    <color name="custom_bg">#FFFCFF</color>
+    <color name="custom_bg">#EBEBEB</color>
 
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorBgDashboard">#EBEBEB</color>
-    <color name="colorTrendingStart">#00B09B</color>
-    <color name="colorTrendingEnd">#96C93D</color>
     <color name="colorDivider">#D6D6D6</color>
 </resources>

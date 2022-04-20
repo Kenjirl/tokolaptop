@@ -15,6 +15,9 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        final TextView nameDashboard = findViewById(R.id.textUsername);
+        nameDashboard.setText(getIntent().getStringExtra("Username"));
+
         btnLogout = findViewById(R.id.btnLogout);
 
         btnLogout.setOnClickListener(view ->  {
