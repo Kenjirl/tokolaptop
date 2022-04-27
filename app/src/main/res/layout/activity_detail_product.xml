@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".DetailProductActivity">
+    android:background="@color/custom_bg"
+    android:paddingHorizontal="10dp"
+    tools:context=".DetailProductActivity"
+    android:orientation="vertical">
 
     <ScrollView
+        android:id="@+id/scrollViewDetailProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,12 +22,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:id="@+id/layoutBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/black"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </LinearLayout>
+
             <FrameLayout
                 android:id="@+id/productImageLayout"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:elevation="4dp"
+                android:layout_height="250dp"
                 android:background="@color/white"
+                android:layout_below="@+id/layoutBack"
                 android:visibility="visible">
 
                 <ImageView
@@ -35,18 +53,6 @@
                     android:layout_gravity="center"
                     android:background="@drawable/acer_aspire_a515"
                     tools:ignore="ContentDescription" />
-
-                <ImageView
-                    android:id="@+id/back"
-                    android:layout_width="38dp"
-                    android:layout_height="38dp"
-                    android:layout_gravity="left"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:elevation="4dp"
-                    android:src="@drawable/ic_arrow_back"
-                    app:tint="@color/black"
-                    tools:ignore="ContentDescription,RtlHardcoded" />
 
             </FrameLayout>
 
@@ -58,7 +64,7 @@
                 android:gravity="center"
                 android:layout_below="@+id/productImageLayout"
                 android:orientation="horizontal"
-                android:padding="16dp"
+                android:padding="10dp"
                 android:visibility="visible">
 
                 <LinearLayout
@@ -113,7 +119,7 @@
                 android:background="#fff"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:padding="16dp"
+                android:padding="5dp"
                 android:visibility="visible">
 
                 <RatingBar
@@ -134,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/rating"
                 android:layout_marginVertical="16dp"
-                android:background="@color/white"
+                android:background="@color/custom_bg"
                 android:orientation="vertical">
 
                 <TextView
@@ -156,5 +162,61 @@
         </RelativeLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navigation_background"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/icHome"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/home"
+                android:src="@drawable/ic_home"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/icFavorite"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/wishlist"
+                android:src="@drawable/ic_favorite"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/icAccount"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/settings"
+                android:src="@drawable/ic_account"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

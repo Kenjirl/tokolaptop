@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    TextView btnLogout;
+    ImageView icAccount;
+    ImageView icHome;
     LinearLayout detailProduct;
 
     @Override
@@ -21,9 +22,16 @@ public class DashboardActivity extends AppCompatActivity {
         final TextView nameDashboard = findViewById(R.id.textUsername);
         nameDashboard.setText(getIntent().getStringExtra("Username"));
 
-        btnLogout = findViewById(R.id.btnLogout);
-        btnLogout.setOnClickListener(view ->  {
+        icAccount = findViewById(R.id.icAccount);
+        icAccount.setOnClickListener(view ->  {
             Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        icHome = findViewById(R.id.icHome);
+        icHome.setOnClickListener(view ->  {
+            Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
             startActivity(intent);
             finish();
         });
