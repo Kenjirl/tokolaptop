@@ -44,4 +44,14 @@
     <string name="product_name">Product Name</string>
     <string name="settings">Settings</string>
     <string name="wishlist">Wishlist</string>
+
+    <!--  LOREMS  -->
+    <string name="lorem30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula dapibus, ultrices tortor eu, condimentum nulla. Maecenas ac dolor tortor. Vivamus sagittis lectus non molestie facilisis. Pellentesque habitant morbi.</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View all</string>
+    <string name="dashboard_welcome">Good Day,</string>
+    <string name="back_button">Back Button</string>
+    <string name="detail_produk">Detail Produk</string>
+    <string name="list_produk">List Produk</string>
+    <string name="filter">Filter</string>
 </resources>

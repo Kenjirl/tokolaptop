@@ -7,10 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="custom_button">#1C7C54</color>
-    <color name="custom_text">#1B512D</color>
-    <color name="custom_bg">#EBEBEB</color>
+    <color name="gray">#808080</color>
+    <color name="custom_button">#ad8161</color>
+    <color name="custom_text">#c49f86</color>
+    <color name="custom_bg">#eed3c0</color>
 
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="colorDivider">#D6D6D6</color>
+    <color name="colorDivider">#F3F6FB</color>
 </resources>
