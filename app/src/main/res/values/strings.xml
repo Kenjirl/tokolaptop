@@ -54,4 +54,7 @@
     <string name="detail_produk">Detail Produk</string>
     <string name="list_produk">List Produk</string>
     <string name="filter">Filter</string>
+    <string name="fav_btn">Make it Favorite</string>
+    <string name="product_image">Product Image</string>
+    <string name="buy_now">Buy Now</string>
 </resources>

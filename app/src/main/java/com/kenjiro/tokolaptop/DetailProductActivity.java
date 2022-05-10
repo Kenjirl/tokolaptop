@@ -17,7 +17,7 @@ public class DetailProductActivity extends AppCompatActivity {
 
         btnBack = findViewById(R.id.back);
         btnBack.setOnClickListener(view -> {
-            Intent intent = new Intent(DetailProductActivity.this, DashboardActivity.class);
+            Intent intent = new Intent(DetailProductActivity.this, ListProdukActivity.class);
             startActivity(intent);
             finish();
         });
