@@ -3,6 +3,6 @@
 
     <item android:state_pressed="true" android:color="@color/custom_button"/>
     <item android:state_checked="true" android:color="@color/custom_button"/>
-    <item android:color="@color/gray"/>
+    <item android:color="@color/white"/>
 
 </selector>

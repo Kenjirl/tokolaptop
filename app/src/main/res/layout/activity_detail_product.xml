@@ -1,180 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/snow"
+    android:fillViewport="true"
     tools:context=".DetailProductActivity"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/layoutBack"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        tools:ignore="UseCompoundDrawables"
-        android:orientation="horizontal">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/back"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_gravity="left"
-            android:src="@drawable/ic_arrow_back"
-            android:contentDescription="@string/back_button"
-            android:background="@drawable/bg_btn"
-            app:tint="@color/black"
-            tools:ignore="RtlHardcoded" />
-        </FrameLayout>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:layout_gravity="center"
-            android:fontFamily="@font/bebas_neue"
-            android:gravity="center"
-            android:text="@string/detail_produk"
-            android:textColor="@color/black"
-            android:textSize="25sp" />
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-        <ImageView
-            android:id="@+id/favorite"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_gravity="right"
-            android:src="@drawable/ic_favorite"
-            android:contentDescription="@string/fav_btn"
-            app:tint="@color/red"
-            tools:ignore="RtlHardcoded" />
-        </FrameLayout>
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/productImageLayout"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_below="@id/layoutBack"
-        android:visibility="visible">
-
-        <ImageView
-            android:id="@+id/productImage"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:background="@drawable/acer_aspire_a515"
-            android:contentDescription="Product Image" />
-
-    </FrameLayout>
-
-    <LinearLayout
-        android:id="@+id/detailsLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/productImageLayout"
-        android:background="@drawable/login_bg"
-        android:orientation="vertical"
-        android:paddingHorizontal="10dp">
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/productDetail"
+            android:id="@+id/layoutBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
             android:padding="10dp"
+            tools:ignore="UseCompoundDrawables"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/bg_lightgray_circle"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/black"
+                    tools:ignore="RtlHardcoded,RedundantDescriptionCheck" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bebas_neue"
+                android:gravity="center"
+                android:text="@string/detail_produk"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <ImageView
+                android:id="@+id/icFav"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_lightgray_circle"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_favorite"
+                android:contentDescription="@string/fav_btn"
+                app:tint="@color/black"
+                tools:ignore="RtlHardcoded" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/productImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/layoutBack"
             android:visibility="visible">
 
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/asus_f412d"
+                android:contentDescription="@string/product_image" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/productImageLayout"
+            android:background="@drawable/login_bg"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
             <LinearLayout
-                android:id="@+id/productName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/product_name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="NestedWeights,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Asus F412D"
+                        android:textColor="@color/custom_text"
+                        android:textSize="16sp"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:text="@string/product_name"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    tools:ignore="NestedWeights,RtlHardcoded" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:text="Asus F412D"
+                    android:text="Rp 5.000.000"
                     android:textColor="@color/custom_text"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     tools:ignore="RtlHardcoded" />
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="right"
-                android:text="Rp 5.000.000"
-                android:textColor="@color/custom_text"
-                android:textSize="18sp"
-                tools:ignore="RtlHardcoded" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/rating"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="5dp"
-            android:visibility="visible">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/lorem30"
-                android:textColor="@color/gray" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/save"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="16dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/rounded_corner"
-                android:elevation="3dp"
-                android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:paddingHorizontal="90dp"
-                android:paddingVertical="12dp"
-                android:text="@string/add_to_cart"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem30"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_corner"
+                    android:elevation="3dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingHorizontal="90dp"
+                    android:paddingVertical="12dp"
+                    android:text="@string/add_to_cart"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:onClick="addToCart"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>

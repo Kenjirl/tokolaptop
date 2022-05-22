@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import java.util.Objects;
+
 public class ListProdukActivity extends AppCompatActivity {
 
     ImageView btnBack;
@@ -15,6 +17,7 @@ public class ListProdukActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_list_produk);
 
         btnBack = findViewById(R.id.back);
@@ -28,7 +31,6 @@ public class ListProdukActivity extends AppCompatActivity {
         productOne.setOnClickListener(view -> {
             Intent intent = new Intent(ListProdukActivity.this, DetailProductActivity.class);
             startActivity(intent);
-            finish();
         });
     }
 }
