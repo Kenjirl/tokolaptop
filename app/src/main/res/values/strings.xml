@@ -47,4 +47,29 @@
     <string name="splash_image">Splash Image</string>
     <string name="keranjang">Keranjang</string>
     <string name="icon_delete">Icon Delete</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="harga_sub_total">Rp 8.000.000</string>
+    <string name="ongkos_kirim">Ongkos Kirim</string>
+    <string name="harga_ongkos_kirim">Rp 100.000</string>
+    <string name="total">Total</string>
+    <string name="harga_total">Rp 8.100.000</string>
+    <string name="checkout">Checkout</string>
+    <string name="kategori_1">Gaming</string>
+    <string name="kategori_2">Work</string>
+    <string name="kategori_3">Convertible</string>
+    <string name="kategori_4">Notebook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="icons">Icons</string>
+    <string name="logo_toko">Logo Toko</string>
+    <string name="row_head_1">Spesifikasi</string>
+    <string name="row_head_2">Keterangan</string>
+    <string name="spek_1">CPU</string>
+    <string name="ket_spek_1">AMD RYZEN 3 3250U 2.60ghZ up to 3.50GHz</string>
+    <string name="spek_2">RAM</string>
+    <string name="ket_spek_2">8GB DDR4</string>
+    <string name="spek_3">Storage</string>
+    <string name="ket_spek_3">SSD 256GB</string>
+    <string name="spek_4">OS</string>
+    <string name="ket_spek_4">Windows 10</string>
 </resources>

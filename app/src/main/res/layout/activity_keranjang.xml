@@ -53,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:paddingTop="20dp"
             android:paddingBottom="300dp">
 
             <LinearLayout
@@ -123,7 +124,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/asus_f412d"
+                        android:src="@drawable/asus_x45u"
                         android:background="@drawable/bg_card"
                         android:contentDescription="@string/product_image" />
                 </LinearLayout>
@@ -136,7 +137,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Asus F412D"
+                        android:text="Asus X45U"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -144,169 +145,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Rp 5.000.000"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@drawable/ic_delete"
-                        android:contentDescription="@string/icon_delete"
-                        app:tint="@color/red" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_card_keranjang"
-                android:baselineAligned="false">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1.5">
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/asus_f412d"
-                        android:background="@drawable/bg_card"
-                        android:contentDescription="@string/product_image" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Asus F412D"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:fontFamily="@font/baloo_tamma"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Rp 5.000.000"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@drawable/ic_delete"
-                        android:contentDescription="@string/icon_delete"
-                        app:tint="@color/red" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_card_keranjang"
-                android:baselineAligned="false">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1.5">
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/asus_f412d"
-                        android:background="@drawable/bg_card"
-                        android:contentDescription="@string/product_image" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Asus F412D"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:fontFamily="@font/baloo_tamma"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Rp 5.000.000"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@drawable/ic_delete"
-                        android:contentDescription="@string/icon_delete"
-                        app:tint="@color/red" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_card_keranjang"
-                android:baselineAligned="false">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1.5">
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/asus_f412d"
-                        android:background="@drawable/bg_card"
-                        android:contentDescription="@string/product_image" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Asus F412D"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:fontFamily="@font/baloo_tamma"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Rp 5.000.000"
+                        android:text="Rp 3.000.000"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:textStyle="bold"/>
@@ -348,7 +187,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Sub Total"
+                android:text="@string/sub_total"
                 android:gravity="center_vertical"
                 android:textSize="15sp"
                 android:textColor="@color/gray"/>
@@ -358,7 +197,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:gravity="end"
-                android:text="Rp 25.000.000"
+                android:text="@string/harga_sub_total"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -373,7 +212,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="Ongkos Kirim"
+                android:text="@string/ongkos_kirim"
                 android:textSize="15sp"
                 android:textColor="@color/gray"/>
             <TextView
@@ -382,7 +221,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:gravity="end"
-                android:text="Rp 100.000"
+                android:text="@string/harga_ongkos_kirim"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -402,7 +241,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="Total"
+                android:text="@string/total"
                 android:textSize="15sp"
                 android:textColor="@color/gray"/>
             <TextView
@@ -411,7 +250,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:gravity="end"
-                android:text="Rp 25.100.000"
+                android:text="@string/harga_total"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -424,9 +263,9 @@
             android:paddingVertical="10dp"
             android:gravity="center"
             android:background="@drawable/rounded_corner"
-            android:text="Checkout"
+            android:text="@string/checkout"
             android:textColor="@color/white"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"
             />
     </LinearLayout>

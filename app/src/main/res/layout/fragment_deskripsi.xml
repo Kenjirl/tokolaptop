@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".TokoFragment">
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/row_head_1"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/row_head_2"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/spek_1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="3dp" />
+        <TextView
+            android:layout_column="1"
+            android:text="@string/ket_spek_1"
+            android:textSize="12sp"
+            android:gravity="end"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/spek_2"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="3dp" />
+        <TextView
+            android:layout_column="1"
+            android:text="@string/ket_spek_2"
+            android:textSize="12sp"
+            android:gravity="end"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/spek_3"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="3dp" />
+        <TextView
+            android:layout_column="1"
+            android:text="@string/ket_spek_3"
+            android:textSize="12sp"
+            android:gravity="end"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/spek_4"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="3dp" />
+        <TextView
+            android:layout_column="1"
+            android:text="@string/ket_spek_4"
+            android:textSize="12sp"
+            android:gravity="end"
+            android:padding="3dp" />
+    </TableRow>
+
+</TableLayout>
