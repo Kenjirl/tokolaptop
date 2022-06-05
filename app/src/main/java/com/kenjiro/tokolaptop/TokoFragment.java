@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-//import android.widget.ImageView;
 
 public class TokoFragment extends Fragment {
 
@@ -36,7 +35,7 @@ public class TokoFragment extends Fragment {
         // Giving the same onClickListener method to every image on Fragment.
         // Each id will have different action, can be seen on doImplicit method.
         for (int iImage=1; iImage<3; iImage++){
-            int idImage = getResources().getIdentifier("Implicit_" + iImage, "id", getContext().getPackageName());
+            int idImage = getResources().getIdentifier("Implicit_" + iImage, "id", requireContext().getPackageName());
             View eventImage = view.findViewById(idImage);
             eventImage.setOnClickListener(this::doImplicit);
         }

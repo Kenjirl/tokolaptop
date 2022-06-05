@@ -49,7 +49,8 @@
             <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                tools:ignore="UselessLeaf">
             </FrameLayout>
         </LinearLayout>
 
@@ -58,13 +59,14 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_below="@id/layoutBack"
+            android:layout_marginTop="-4dp"
             android:visibility="visible">
 
             <ImageView
+                android:id="@+id/productImage"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
-                android:background="@drawable/asus_f412d"
                 android:contentDescription="@string/product_image" />
 
         </FrameLayout>
@@ -104,12 +106,12 @@
                         tools:ignore="NestedWeights,RtlHardcoded" />
 
                     <TextView
+                        android:id="@+id/productNama"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:layout_weight="1"
                         android:gravity="right"
-                        android:text="Asus F412D"
                         android:textColor="@color/custom_text"
                         android:textSize="16sp"
                         tools:ignore="RtlHardcoded" />
@@ -117,11 +119,11 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/productHarga"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:text="Rp 5.000.000"
                     android:textColor="@color/custom_text"
                     android:textSize="18sp"
                     tools:ignore="RtlHardcoded" />
@@ -148,7 +150,7 @@
                         android:paddingVertical="5dp"
                         android:gravity="center"
                         android:background="@color/custom_button"
-                        android:text="Deskripsi"
+                        android:text="@string/detailFrgBtn1"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="@color/white"/>
@@ -164,7 +166,7 @@
                         android:paddingVertical="5dp"
                         android:gravity="center"
                         android:background="@color/custom_button"
-                        android:text="Toko"
+                        android:text="@string/detailFrgBtn2"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="@color/white"/>

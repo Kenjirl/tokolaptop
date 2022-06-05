@@ -231,98 +231,78 @@
 
                         <LinearLayout
                             android:id="@+id/layoutAsus"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
                             android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/white_rectangle_bg"
+                            android:background="@drawable/bg_folder"
                             android:gravity="center"
-                            android:orientation="vertical"
                             android:padding="5dp"
                             app:layout_constraintDimensionRatio="H,1:1"
                             tools:ignore="UseCompoundDrawables">
-
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
-                                android:layout_margin="8dp"
+                                android:layout_marginTop="10dp"
                                 android:contentDescription="@string/app_name"
                                 android:padding="8dp"
-                                android:src="@drawable/asus" />
-
+                                android:src="@drawable/asus"/>
                         </LinearLayout>
 
                         <LinearLayout
                             android:id="@+id/layoutAcer"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
                             android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/white_rectangle_bg"
+                            android:background="@drawable/bg_folder"
                             android:gravity="center"
-                            android:orientation="vertical"
                             android:padding="5dp"
                             app:layout_constraintDimensionRatio="H,1:1"
                             tools:ignore="UseCompoundDrawables">
-
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
-                                android:layout_margin="8dp"
+                                android:layout_marginTop="10dp"
                                 android:contentDescription="@string/app_name"
                                 android:padding="8dp"
-                                android:src="@drawable/acer" />
-
+                                android:src="@drawable/acer"/>
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/layoutApple"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
                             android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/white_rectangle_bg"
+                            android:background="@drawable/bg_folder"
                             android:gravity="center"
-                            android:orientation="vertical"
                             android:padding="5dp"
                             app:layout_constraintDimensionRatio="H,1:1"
-                            app:layout_constraintEnd_toStartOf="@id/layoutAcer"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/layoutAsus"
                             tools:ignore="UseCompoundDrawables">
-
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
-                                android:layout_margin="8dp"
+                                android:layout_marginTop="10dp"
                                 android:contentDescription="@string/app_name"
                                 android:padding="8dp"
-                                android:src="@drawable/apple" />
-
+                                android:src="@drawable/apple"/>
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/layoutHp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
                             android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/white_rectangle_bg"
+                            android:background="@drawable/bg_folder"
                             android:gravity="center"
-                            android:orientation="vertical"
                             android:padding="5dp"
                             app:layout_constraintDimensionRatio="H,1:1"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/layoutAsus"
-                            app:layout_constraintTop_toBottomOf="@id/layoutAcer"
                             tools:ignore="UseCompoundDrawables">
-
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
-                                android:layout_margin="8dp"
+                                android:layout_marginTop="10dp"
                                 android:contentDescription="@string/app_name"
                                 android:padding="8dp"
-                                android:src="@drawable/hp" />
-
+                                android:src="@drawable/hp"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -385,7 +365,7 @@
                                 android:layout_margin="5dp"
                                 android:contentDescription="@string/app_name"
                                 android:padding="8dp"
-                                android:src="@drawable/asus_f412d" />
+                                android:src="@drawable/asusimg_1" />
 
                             <TextView
                                 android:layout_width="match_parent"

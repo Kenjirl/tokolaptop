@@ -5,16 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Objects;
 
 public class KeranjangActivity extends AppCompatActivity {
 
-    ImageView btnBack;
-//    LinearLayout icHome;
-//    LinearLayout icKeranjang;
-//    LinearLayout icAccount;
+    ImageView btnBack, viewImage;
+    TextView viewNama, viewHarga, textSubTotal, textOngkir, textTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,32 +22,47 @@ public class KeranjangActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_keranjang);
 
+        Bundle extras = getIntent().getExtras();
+
+        viewImage = findViewById(R.id.cartProductImg);
+        viewNama = findViewById(R.id.cartProductName);
+        viewHarga = findViewById(R.id.cartProductPrice);
+
+        int res_image = extras.getInt("image");
+        viewImage.setImageResource(res_image);
+        viewNama.setText(getIntent().getStringExtra("nama"));
+        viewHarga.setText(getIntent().getStringExtra("harga"));
+
+        NumberFormat formatter = new DecimalFormat("#,###");
+
+        String strHarga = viewHarga.getText().toString();
+        strHarga = strHarga.replace("Rp ", "");
+        strHarga = strHarga.replace(".", "");
+        double subtotal = Double.parseDouble(strHarga);
+
+        String strSubtotal = formatter.format(subtotal);
+        strSubtotal = "Rp " + strSubtotal;
+
+        double ongkir = 100000;
+        String strOngkir = formatter.format(ongkir);
+        strOngkir = "Rp " + strOngkir;
+
+        double total = subtotal + ongkir;
+        String strTotal = formatter.format(total);
+        strTotal = "Rp " + strTotal;
+
+        textSubTotal = findViewById(R.id.textSubTotal);
+        textSubTotal.setText(strSubtotal);
+        textOngkir = findViewById(R.id.textOngkir);
+        textOngkir.setText(strOngkir);
+        textTotal = findViewById(R.id.textTotal);
+        textTotal.setText(strTotal);
+
         btnBack = findViewById(R.id.back);
         btnBack.setOnClickListener(view -> {
-            Intent intent = new Intent(KeranjangActivity.this, DashboardActivity.class);
-            startActivity(intent);
+            Intent intents = new Intent(KeranjangActivity.this, DashboardActivity.class);
+            startActivity(intents);
             finish();
         });
-
-//        icHome = findViewById(R.id.icHome);
-//        icHome.setOnClickListener(view ->  {
-//            Intent intents = new Intent(KeranjangActivity.this, DashboardActivity.class);
-//            startActivity(intents);
-//            finish();
-//        });
-//
-//        icKeranjang = findViewById(R.id.icKeranjang);
-//        icKeranjang.setOnClickListener(view ->  {
-//            Intent intents = new Intent(KeranjangActivity.this, KeranjangActivity.class);
-//            startActivity(intents);
-//            finish();
-//        });
-//
-//        icAccount = findViewById(R.id.icAccount);
-//        icAccount.setOnClickListener(view ->  {
-//            Intent intents = new Intent(KeranjangActivity.this, AkunActivity.class);
-//            startActivity(intents);
-//            finish();
-//        });
     }
 }

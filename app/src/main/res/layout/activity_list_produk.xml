@@ -160,7 +160,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="200dp">
+            android:paddingBottom="250dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -169,7 +169,7 @@
                 android:baselineAligned="false">
 
                 <LinearLayout
-                    android:id="@+id/productOne"
+                    android:id="@+id/product_1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -179,11 +179,13 @@
                     android:orientation="vertical"
                     android:background="@color/white">
                     <ImageView
+                        android:id="@+id/asusImg_1"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/asus_f412d"
+                        android:src="@drawable/asusimg_1"
                         android:contentDescription="@string/product_image" />
                     <TextView
+                        android:id="@+id/nama_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -191,6 +193,7 @@
                         android:textSize="20sp"
                         android:textColor="@color/black"/>
                     <TextView
+                        android:id="@+id/harga_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -207,6 +210,7 @@
                         android:textColor="@color/black"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/product_2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -216,11 +220,13 @@
                     android:orientation="vertical"
                     android:background="@color/white">
                     <ImageView
+                        android:id="@+id/asusImg_2"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/asus_expertbook_b1"
+                        android:src="@drawable/asusimg_2"
                         android:contentDescription="@string/product_image" />
                     <TextView
+                        android:id="@+id/nama_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -228,6 +234,7 @@
                         android:textSize="20sp"
                         android:textColor="@color/black"/>
                     <TextView
+                        android:id="@+id/harga_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -252,6 +259,7 @@
                 android:baselineAligned="false">
 
                 <LinearLayout
+                    android:id="@+id/product_3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -261,11 +269,13 @@
                     android:orientation="vertical"
                     android:background="@color/white">
                     <ImageView
+                        android:id="@+id/asusImg_3"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/asus_m409"
+                        android:src="@drawable/asusimg_3"
                         android:contentDescription="@string/product_image" />
                     <TextView
+                        android:id="@+id/nama_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -273,6 +283,7 @@
                         android:textSize="20sp"
                         android:textColor="@color/black"/>
                     <TextView
+                        android:id="@+id/harga_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -289,6 +300,7 @@
                         android:textColor="@color/black"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/product_4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -298,11 +310,13 @@
                     android:orientation="vertical"
                     android:background="@color/white">
                     <ImageView
+                        android:id="@+id/asusImg_4"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/asus_rog_zephyrus"
+                        android:src="@drawable/asusimg_4"
                         android:contentDescription="@string/product_image" />
                     <TextView
+                        android:id="@+id/nama_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -310,6 +324,7 @@
                         android:textSize="20sp"
                         android:textColor="@color/black"/>
                     <TextView
+                        android:id="@+id/harga_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -334,6 +349,7 @@
                 android:baselineAligned="false">
 
                 <LinearLayout
+                    android:id="@+id/product_5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -343,11 +359,13 @@
                     android:orientation="vertical"
                     android:background="@color/white">
                     <ImageView
+                        android:id="@+id/asusImg_5"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/asus_vivobook_x540ya"
+                        android:src="@drawable/asusimg_5"
                         android:contentDescription="@string/product_image" />
                     <TextView
+                        android:id="@+id/nama_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -355,6 +373,7 @@
                         android:textSize="20sp"
                         android:textColor="@color/black"/>
                     <TextView
+                        android:id="@+id/harga_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -371,6 +390,7 @@
                         android:textColor="@color/black"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/product_6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -380,11 +400,13 @@
                     android:orientation="vertical"
                     android:background="@color/white">
                     <ImageView
+                        android:id="@+id/asusImg_6"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/asus_x45u"
+                        android:src="@drawable/asusimg_6"
                         android:contentDescription="@string/product_image" />
                     <TextView
+                        android:id="@+id/nama_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -392,6 +414,7 @@
                         android:textSize="20sp"
                         android:textColor="@color/black"/>
                     <TextView
+                        android:id="@+id/harga_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bebas_neue"
@@ -413,5 +436,19 @@
         </LinearLayout>
 
     </ScrollView>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/icCart"-->
+<!--        android:layout_width="48dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:padding="4dp"-->
+<!--        android:src="@drawable/ic_troli_white"-->
+<!--        android:background="@drawable/bg_white_circle"-->
+<!--        android:backgroundTint="@color/custom_button"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:contentDescription="@string/add_to_cart" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

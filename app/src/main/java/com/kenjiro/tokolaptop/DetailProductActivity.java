@@ -13,25 +13,37 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Objects;
-//import java.util.concurrent.atomic.AtomicBoolean;
 
 public class DetailProductActivity extends AppCompatActivity {
 
-    ImageView btnBack;
-//    ImageView icFav;
-    TextView deskripsiFgBtn, tokoFgBtn;
+    ImageView btnBack, viewImage;
+    TextView deskripsiFgBtn, tokoFgBtn, viewNama, viewHarga;
+    int res_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_detail_product);
+        Bundle extras = getIntent().getExtras();
 
+        // Set fragment awal
         FragmentManager FM = getSupportFragmentManager();
         FragmentTransaction FT = FM.beginTransaction();
         FT.replace(R.id.fragmentLayout,new DeskripsiFragment());
         FT.commit();
 
+        // terima extra
+        viewImage = findViewById(R.id.productImage);
+        viewNama = findViewById(R.id.productNama);
+        viewHarga = findViewById(R.id.productHarga);
+
+        res_image = extras.getInt("image");
+        viewImage.setImageResource(res_image);
+        viewNama.setText(getIntent().getStringExtra("nama"));
+        viewHarga.setText(getIntent().getStringExtra("harga"));
+
+        // on click listener button back
         btnBack = findViewById(R.id.back);
         btnBack.setOnClickListener(view -> {
             Intent intent = new Intent(DetailProductActivity.this, ListProdukActivity.class);
@@ -39,21 +51,7 @@ public class DetailProductActivity extends AppCompatActivity {
             finish();
         });
 
-//        AtomicBoolean colorRed = new AtomicBoolean(false);
-//
-//        icFav = (ImageView) findViewById(R.id.icFav);
-//        icFav.setOnClickListener(view -> {
-//            if(!colorRed.get()){
-//                icFav.setColorFilter(getResources().getColor(R.color.red));
-//                Toast.makeText(DetailProductActivity.this, "Ditambahkan ke Favorite", Toast.LENGTH_SHORT).show();
-//                colorRed.set(true);
-//            }else {
-//                icFav.setColorFilter(getResources().getColor(R.color.black));
-//                Toast.makeText(DetailProductActivity.this, "Dihapus dari Favorite", Toast.LENGTH_SHORT).show();
-//                colorRed.set(false);
-//            }
-//        });
-
+        // on click listener untuk mengganti fragment yang terlihat
         deskripsiFgBtn = findViewById(R.id.fragmentDeskripsiBtn);
         tokoFgBtn = findViewById(R.id.fragmentTokoBtn);
 
@@ -70,8 +68,15 @@ public class DetailProductActivity extends AppCompatActivity {
     }
 
     public void addToCart(View view) {
+        String textNama = viewNama.getText().toString();
+        String textHarga = viewHarga.getText().toString();
+
         Toast.makeText(DetailProductActivity.this, "Ditambahkan ke Keranjang", Toast.LENGTH_SHORT).show();
+
         Intent intent = new Intent(DetailProductActivity.this, KeranjangActivity.class);
+        intent.putExtra("image", res_image);
+        intent.putExtra("nama", textNama);
+        intent.putExtra("harga", textHarga);
         startActivity(intent);
         finish();
     }

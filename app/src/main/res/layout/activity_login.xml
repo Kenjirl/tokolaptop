@@ -8,7 +8,6 @@
     android:fillViewport="true"
     android:scrollbars="none"
     tools:context=".LoginActivity">
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -93,7 +92,6 @@
                 app:boxStrokeColor="@color/custom_button"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/custom_button">
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtSignInPassword"
                     android:layout_width="match_parent"
@@ -104,14 +102,12 @@
                     android:textColor="@color/black"
                     android:textColorHint="#757575"
                     tools:ignore="TextContrastCheck" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
-
                 <TextView
                     android:id="@+id/btnLogin"
                     android:layout_width="wrap_content"
@@ -126,7 +122,6 @@
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     tools:ignore="TextContrastCheck" />
-
             </FrameLayout>
 
             <LinearLayout
@@ -135,7 +130,6 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal">
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -144,7 +138,6 @@
                     android:textStyle="bold"
                     android:textColor="#8D6E63"
                     android:textSize="14sp" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -161,7 +154,6 @@
                     android:text="@string/belum_punya_akun"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
-
                 <TextView
                     android:id="@+id/txtRegister"
                     android:layout_width="wrap_content"

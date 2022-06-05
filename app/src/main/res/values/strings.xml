@@ -72,4 +72,6 @@
     <string name="ket_spek_3">SSD 256GB</string>
     <string name="spek_4">OS</string>
     <string name="ket_spek_4">Windows 10</string>
+    <string name="detailFrgBtn1">Deskripsi</string>
+    <string name="detailFrgBtn2">Toko</string>
 </resources>
