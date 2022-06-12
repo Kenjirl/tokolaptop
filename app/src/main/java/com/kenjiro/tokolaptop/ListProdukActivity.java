@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -75,7 +76,6 @@ public class ListProdukActivity extends AppCompatActivity {
                 if (!selected[final_2]) {
                     produkLayout.setBackgroundColor(ContextCompat.getColor(getBaseContext(), R.color.gray));
                     selected[final_2] = true;
-                    System.out.println(textNama + ' ' + textHarga);
                     data = new Checkout(textNama, textHarga);
                     list.add(data);
                 }
@@ -98,7 +98,8 @@ public class ListProdukActivity extends AppCompatActivity {
         // Click button cart
         btnCart = findViewById(R.id.icCart);
         btnCart.setOnClickListener(view -> {
-            System.out.println(list.get(0).getNama());
+            Toast.makeText(ListProdukActivity.this, "Ditambahkan ke Keranjang", Toast.LENGTH_SHORT).show();
+
             Intent intent = new Intent(ListProdukActivity.this, KeranjangActivity.class);
             intent.putExtra("Checkout", list);
             startActivity(intent);
