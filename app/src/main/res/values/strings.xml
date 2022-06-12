@@ -27,7 +27,6 @@
     <string name="wishlist">Wishlist</string>
 
     <!--  LOREMS  -->
-    <string name="lorem30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula dapibus, ultrices tortor eu, condimentum nulla. Maecenas ac dolor tortor. Vivamus sagittis lectus non molestie facilisis. Pellentesque habitant morbi.</string>
     <string name="categories">Categories</string>
     <string name="view_all">View all</string>
     <string name="dashboard_welcome">Good Day,</string>
@@ -74,4 +73,8 @@
     <string name="ket_spek_4">Windows 10</string>
     <string name="detailFrgBtn1">Deskripsi</string>
     <string name="detailFrgBtn2">Toko</string>
+    <string name="selamat">Selamat.</string>
+    <string name="pesanan_anda_diterima">Pesanan Anda Diterima !</string>
+    <string name="txt_pesan_sukses">Harap bersabar, pesanan Anda akan tiba dalam 3 hari lagi</string>
+    <string name="kembali_ke_dashboard"><u>kembali ke dashboard</u></string>
 </resources>

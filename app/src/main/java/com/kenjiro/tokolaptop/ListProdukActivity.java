@@ -1,7 +1,7 @@
 package com.kenjiro.tokolaptop;
 
 import androidx.appcompat.app.AppCompatActivity;
-//import androidx.core.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,13 +9,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-//import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class ListProdukActivity extends AppCompatActivity {
 
     ImageView btnBack;
-//    ImageView btnCart;
+    ImageView btnCart;
+    ArrayList<Checkout> list;
+    Checkout data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +25,8 @@ public class ListProdukActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_list_produk);
 
-//        ArrayList<String> produkArrayList = new ArrayList<String>();
-//        boolean[] selected = new boolean[7];
+        boolean[] selected = new boolean[7];
+        list = new ArrayList<>();
 
         // Click button back
         btnBack = findViewById(R.id.back);
@@ -60,34 +62,46 @@ public class ListProdukActivity extends AppCompatActivity {
                 startActivity(intent);
             });
 
-//            int final_2 = i;
-//            produkLayout.setOnLongClickListener(view -> {
-//                if (!selected[final_2]) {
-//                    produkLayout.setBackgroundColor(ContextCompat.getColor(getBaseContext(), R.color.gray));
-//                    selected[final_2] = true;
-//                }
-//                else {
-//                    produkLayout.setBackgroundColor(ContextCompat.getColor(getBaseContext(), R.color.white));
-//                    selected[final_2] = false;
-//                }
-//
-//                produkArrayList.clear();
+            int final_2 = i;
+            produkLayout.setOnLongClickListener(view -> {
+                int iDNama = getResources().getIdentifier("nama_" + final_2, "id", getBaseContext().getPackageName());
+                TextView nama = findViewById(iDNama);
+                String textNama = nama.getText().toString();
+
+                int iDHarga = getResources().getIdentifier("harga_" + final_2, "id", getBaseContext().getPackageName());
+                TextView harga = findViewById(iDHarga);
+                String textHarga = harga.getText().toString();
+
+                if (!selected[final_2]) {
+                    produkLayout.setBackgroundColor(ContextCompat.getColor(getBaseContext(), R.color.gray));
+                    selected[final_2] = true;
+                    System.out.println(textNama + ' ' + textHarga);
+                    data = new Checkout(textNama, textHarga);
+                    list.add(data);
+                }
+                else {
+                    produkLayout.setBackgroundColor(ContextCompat.getColor(getBaseContext(), R.color.white));
+                    selected[final_2] = false;
+                    data = new Checkout(textNama, textHarga);
+                    list.remove(data);
+                }
+//                list.clear();
 //                for (int j = 1; j < 7; j++){
 //                    if (selected[j]){
-//                        produkArrayList.add(j);
+//                        list.add(j);
 //                    }
 //                }
-//                return true;
-//            });
+                return true;
+            });
         }
 
         // Click button cart
-//        btnCart = findViewById(R.id.icCart);
-//        btnCart.setOnClickListener(view -> {
-//            System.out.println(produkArrayList);
-//            Intent intent = new Intent(ListProdukActivity.this, ProdukDetail.class);
-//            intent.putStringArrayListExtra("nama", (ArrayList<String>) produkArrayList );
-//            startActivity(intent);
-//        });
+        btnCart = findViewById(R.id.icCart);
+        btnCart.setOnClickListener(view -> {
+            System.out.println(list.get(0).getNama());
+            Intent intent = new Intent(ListProdukActivity.this, KeranjangActivity.class);
+            intent.putExtra("Checkout", list);
+            startActivity(intent);
+        });
     }
 }
