@@ -45,7 +45,6 @@ public class ListProdukActivity extends AppCompatActivity {
             produkLayout.setOnClickListener(view -> {
                 String iDImage = "asusimg_" + finalI_1;
                 int intDrawImg = getResources().getIdentifier(iDImage, "drawable", getPackageName());
-//                String strDrawImg = String.valueOf(intDrawImg);
 
                 int iDNama = getResources().getIdentifier("nama_" + finalI_1, "id", getBaseContext().getPackageName());
                 TextView nama = findViewById(iDNama);
@@ -61,6 +60,7 @@ public class ListProdukActivity extends AppCompatActivity {
                 intent.putExtra("nama", textNama);
                 intent.putExtra("harga", textHarga);
                 startActivity(intent);
+                finish();
             });
 
             int final_2 = i;
@@ -85,12 +85,6 @@ public class ListProdukActivity extends AppCompatActivity {
                     data = new Checkout(textNama, textHarga);
                     list.remove(data);
                 }
-//                list.clear();
-//                for (int j = 1; j < 7; j++){
-//                    if (selected[j]){
-//                        list.add(j);
-//                    }
-//                }
                 return true;
             });
         }
@@ -103,6 +97,7 @@ public class ListProdukActivity extends AppCompatActivity {
             Intent intent = new Intent(ListProdukActivity.this, KeranjangActivity.class);
             intent.putExtra("Checkout", list);
             startActivity(intent);
+            finish();
         });
     }
 }
